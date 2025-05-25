@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/822f67e1ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="/dist/style.css" rel="stylesheet">
+   
+    <title>Camfind</title>
+</head>
+<body>
+   
+    <header class="fixed z-33 ">
+        <nav class="nav-sec   relative ">
+            <!--logo-->
+            <div class="logo "> <span><i class="fa-solid fa-location-dot"></i></span> <span>CamFind</span></div>
+
+            <!--menu-bar-->
+            <div class="md:hidden lg:hidden " id="menu"><span><i class="fa-solid fa-bars"></i></span></div>
+            <!--right-nav-sec-->
+            <div class=" right-nav-sec w-full md:w-max   top-0  right-0  md:h-[50px]  md:m-0 flex   md:flex items-center  flex-col md:gap-6   md:right-0  md:top-0  md:flex-row absolute md:relative bg-slate-600 md:bg-transparent      ">
+                
+                <div id="navMenu" class="  md:w-full w-full md:flex-row  md:items-start md:justify-end h-[50vh] md:h-full hidden navigation pb-10 md:flex   flex-col  md:mt-0    ">
+                    <i  id="close" class=" w-full  text-2xl  fa-solid fa-xmark  pt-3 ml-2  "></i>
+                    <ul class="  md:w-max w-full items-center  flex  flex-col md:h-max  md:mt-2.5   md:justify-start md:items-end   md:flex-row ">
+                    <li> <a href="#" class="text-justify">CamFind for professionals</a></li>
+                    <li> <a href="#">About us</a></li>
+                    <li >  <a href="#">Contact</a> </li>
+                      <a href="#" class="md:hidden">Log in</a>
+                    <a href="#" class="md:hidden">Sign up</a>
+                    </ul>
+                </div>
+                <div class="login-signup md:flex  md:w-full hidden md:gap-[20px] md:items-start md:self-start h-full md:h-max md:justify-start md:flex-row">
+                    <a href="#" class=" btn login  textColor self-center">Log in</a>
+                    <a href="#" class=" btn  signup"><span class="">Sign up</span></a>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+    
+     <main>
+        <section class="hero-sec  md:mt-1 mb-[30px]">
+            <h1 class="text-[40px] px-4 md:text-2xl text-black mt-10 md:mt-2 text- text-justify">Connect with the best business around you.</h1>
+
+            <div class="search-biz bg-white">
+
+                <input type="text" placeholder="What business would you like to find today?"> <span class="search-btn"><button class="icon-btn"> <i class="fa-solid fa-magnifying-glass"></i></button></span>
+            </div>
+            <div class="subnav-cont relative hidden md:block ">
+               <ul class="filter-list md:max-lg:hidden"> 
+               <li class="  hidden md:inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Restaurant <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+               
+                <div   class="  w-[max] subnav-cat-items rounded-r-lg  bg-white mt-[12px] absolute" >
+                    <ul class="  w-[100%] subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]   text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Takeout</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bakeries</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Delivery</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dinner</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Coffee & cafes</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Lunch</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Breakfast & Brunch</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> New Restaurant</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Sport Bars & Pubs</a></li>
+                      
+
+                    </ul>
+                </div>
+               
+            </li>
+               <li class="inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Home & Garden <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                    <ul class="  w-max subnav-item  grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]   text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Contractor & Handyman</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Plumber</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Electrician</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Painter</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Appliances and Repairs</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Furniture Stores</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Heating & Air Conditioning </a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Moves</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span>Home Cleaning</a></li>
+                      
+
+                    </ul>
+                </div> 
+            
+            </li>
+               <li class="inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Auto Services <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                    <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Auto Repair</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Car Wash</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Body shops</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Auto Detailing</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Junkyard</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Tires</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Parking</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Oil Change</a></li>
+                      
+
+                    </ul>
+                </div>
+            </li>
+               <li class=" text-sm inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Health & Beauty <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                    <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dentist</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dermatologist</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Nail Salons</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Doctor</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Barbers</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Hair Salons</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Optometrists</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Massage</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Physical Theraphy</a></li>
+                      
+
+                    </ul>
+                </div>
+            </li>
+               <li class="inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Travel & Activities <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+            <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                    <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[15px]   ">
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Things to Do</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bookstores</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bike Rentals</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Kids Activities</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Venues & Event</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Churches</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Hotels</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Shopping Malls</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Taxis</a></li>
+                      
+
+                    </ul>
+                </div>
+            </li>
+               <li class="inline-block  pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">More <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                <div   class="  w-[max] subnav-cat-items rounded-l-lg   bg-white mt-[12px]  absolute right-[20px]" >
+                    <ul class="  w-[100%] subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dry Cleaning</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Apartments</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Real Estate Agent</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Banks & Credit Unions</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Gyms</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Tailors & Alteration</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> House Care Service</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Junk Removal</a></li>
+                        <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Parking</a></li>
+                      
+
+                    </ul>
+                </div>
+                </li></ul>
+            </div>
+        </section>
+
+        
+     </main>
+     <!--recent activity section-->
+     <section class="activity-sec  flex justify-center items-center">
+        <div class="  activity-cont w-[100%] flex-wrap  flex flex-col items-center my-20 gap-10">
+            <div><h1 class="font-bold text-[40px]  text-center">Recent Activity</h1> </div>
+        <!--comment-&review section-->
+        <div class="activity-cont w-full md:max-w-[1144px] activity-cont  md:gap-6 grid grid-cols-1  md:max-lg:grid-cols-2 md:max-lg:gap-5 lg:grid-cols-3 ">
+            <!--activity card-->
+
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class=" flex  gap-2 w-[100%] pb-2">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px] md:md">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start pb-5">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                    <div class=" rounded-2xl w-full h-40 ">
+                        <img class=" object-cover h-full w-full y-css-xl4y6g" src="/public/assets/images/activity-pic1.jpg" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                    </div>
+                    <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                    
+                </div>
+            </div>
+            <div class="activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class="    w-full gap-2 flex">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px]">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 w-full">
+                    <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                        <div class=" border border-gray-400 rounded-xl w-full h-40 ">
+                            <img class=" object-cover h-full w-full y-css-xl4y6g" src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                        </div>
+                        <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                        
+                    </div>
+                    <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                        <div class=" border border-gray-400 rounded-xl w-full h-40 ">
+                            <img class=" object-cover h-full w-full y-css-xl4y6g" src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                        </div>
+                        <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                        
+                    </div>
+                </div>
+                <a  class="self-start text-blue-400" href="#">Show all Photos</a>
+              
+            </div>
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class=" flex  gap-2 w-[100%] pb-2">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px] md:md">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start pb-5">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                    <div class=" rounded-2xl w-full h-40 ">
+                        <img class=" object-cover h-full w-full y-css-xl4y6g" src="/public/assets/images/activity-pic1.jpg" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                    </div>
+                    <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                    
+                </div>
+            </div>
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class=" flex  gap-2 w-[100%] pb-2">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px] md:md">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start pb-5">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                    <div class=" rounded-2xl w-full h-40 ">
+                        <img class=" object-cover h-full w-full y-css-xl4y6g" src="/public/assets/images/activity-pic1.jpg" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                    </div>
+                    <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                    
+                </div>
+            </div>
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class=" flex  gap-2 w-[100%] pb-2">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px] md:md">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start pb-5">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                    <div class=" rounded-2xl w-full h-40 ">
+                        <img class=" object-cover h-full w-full y-css-xl4y6g" src="/public/assets/images/activity-pic1.jpg" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                    </div>
+                    <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                    
+                </div>
+            </div>
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class=" flex  gap-2 w-[100%] pb-2">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px] md:md">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start pb-5">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                    <div class=" rounded-2xl w-full h-40 ">
+                        <img class=" object-cover h-full w-full y-css-xl4y6g" src="/public/assets/images/activity-pic1.jpg" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                    </div>
+                    <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                    
+                </div>
+            </div>
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class=" flex  gap-2 w-[100%] pb-2">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px] md:md">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start pb-5">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                    <div class=" rounded-2xl w-full h-40 ">
+                        <img class=" object-cover h-full w-full y-css-xl4y6g" src="/public/assets/images/activity-pic1.jpg" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                    </div>
+                    <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                    
+                </div>
+            </div>
+           <div class="activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class="    w-full gap-2 flex">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px]">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 w-full">
+                    <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                        <div class=" border border-gray-400 rounded-xl w-full h-40 ">
+                            <img class=" object-cover h-full w-full y-css-xl4y6g" src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                        </div>
+                        <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                        
+                    </div>
+                    <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                        <div class=" border border-gray-400 rounded-xl w-full h-40 ">
+                            <img class=" object-cover h-full w-full y-css-xl4y6g" src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                        </div>
+                        <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                        
+                    </div>
+                </div>
+                <a  class="self-start text-blue-400" href="#">Show all Photos</a>
+              
+            </div>
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+                <div class=" flex  gap-2 w-[100%] pb-2">
+                    <div class="img-cont  w-[40px] h-[40px]">
+                        <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
+                    </div>
+                    <div class="review-info flex gap-1 flex-col">
+                        <h2><span>Anu B. </span><span>a photo</span></h2>
+                        <span class="text-gray-400 text-[14px] md:md">46 minutes ago</span>
+                    </div>
+                </div>
+    
+                <div class="places w-full  flex flex-col items-start justify-start pb-5">
+                    <div>
+                        <h2>Saudi Arabia Airline</h2>
+                        <p class=" text-[14px] text-gray-500">Postal services and delivery</p>
+                    </div>
+                </div>
+                <div class=" w-full place-img-pic flex flex-col gap-4"  >
+                    <div class=" rounded-2xl w-full h-40 ">
+                        <img class=" object-cover h-full w-full y-css-xl4y6g" src="/public/assets/images/activity-pic1.jpg" alt="Photo of Saudi Arabian Airlines Lignes Aeriennes de l'Arabie Saoudite" loading="eager" draggable="true">
+                    </div>
+                    <div><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                    
+                </div>
+            </div>
+          
+        </div>
+        <div class="mt-5"> <span><i class="fa-solid fa-angle-down md:text-[25px]"></i></span> <span><a href="#" class="font-bold text-[20px] md:text-[25px]">Show more activity</a></span></div>
+    </section>
+
+    <!--category section-->
+    <section class="category-sec w-full  flex justify-center   items-center md:my-20">
+        <div class="cat-cont  w-full lg:max-w-[1184px] flex flex-col items-center  justify-center gap-[20px]">
+            <div><h1 class="font-bold text-[30px]">categories</h1></div>
+            <div class=" w-[100%] text-sm md:max-w-[1144px]  grid   grid-cols-4 place-content-center gap-[5px]  md:grid md:gap-10  md:grid-cols-[minmax(0,_256px)_minmax(0,_256px)_minmax(0,_256px)_minmax(0,_256px)] md:grid-rows-[minmax(0,_183px)_minmax(0,_183px)]   ">
+                <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[5px] md:gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class="gap" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span class=" text-">Restaurants</span>
+                </div>
+                <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class=" " src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span>Restaurants</span>
+                </div>
+                <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class=" " src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span>Restaurants</span>
+                </div>
+                <div class="flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class=" " src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span>Restaurants</span>
+                </div>
+                <div class="flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class=" " src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span>Restaurants</span>
+                </div>
+                <div class="flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class=" " src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span>Restaurants</span>
+                </div>
+                <div class="flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class=" " src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span>Restaurants</span>
+                </div>
+                <div class="flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[20px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+                    <img class=" " src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+                    <span>Restaurants</span>
+                </div>
+                
+            </div>
+            
+
+
+        </div>
+    </section>
+    <footer class="w-full bg-[rgba(247,247,247,1)]  footer-sec  flex justify-center items-center pt-[5rem]">
+        <div class=" w-full md:w-[60%]  md:min-w-[969px]  footer-cont  flex flex-col items-center justify-center">
+           <div class=" w-[100%]  grid place-content-end border-[#c0b5b5] border-b-1  p-4 grid-cols-1 md:grid md:grid-cols-4 gap-4 md:gap-10 ">
+            <div class=" text-center">
+                <h1 class="font-bold">About</h1>
+                <ul>
+                <li><a href="#">About camfind</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Trust & Safety</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Private Policy</a></li>
+                <li><a href="#">Content Guidelines</a></li></ul>
+            </div>
+            <div class=" text-center">
+                <h1 class="font-bold">Discover</h1>
+                <ul>
+                <li><a href="#">Camfind Project Cost Guides</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Events</a></li></ul>
+            </div>
+            <div class="  text-center">
+                <h1 class="font-bold">Camfind for Business</h1>
+                <ul>
+                <li><a href="#">Camfind for Business</a></li>
+                <li><a href="#">Business Owner Login</a></li>
+                <li><a href="#">Claim your Business Page</a></li>
+                <li><a href="#">Business Support</a></li>
+                <li><a href="#">Camfind for Restaurant Owners</a></li>
+                <li><a href="#">Advertise on Camfind</a></li>
+                <li><a href="#">Business Success Stories</a></li>
+                <li><a href="#">Camfind Data for B2B</a></li></ul>
+            </div>
+            <div class="text-center">
+                    <div>
+                        <h2 class="font-bold">Languages</h2>
+                        <div><a href="#"><span class="text-[#428add]">English</span><span><i class="pl-[5px] fa-solid fa-angle-down text-[#428add]"></i></span></a></div>
+                    </div> 
+                    <div>
+                        <h2 class="font-bold">Cities</h2>
+                        <div><a href="#"><span class="text-[#428add]">Explore a City</span><span><i class=" pl-[5px] fa-solid fa-angle-down text-[#428add]"></i></span></a></div>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="block  text-[rgba(107,109,111,1)] text-[14px]">Copyright &copy;2020-2025 Camfind Inc.</div>
+    </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

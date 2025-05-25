@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/822f67e1ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Product Page</title>
+</head>
+<body>
+         <!--header section-->
+      <header class="w-full   z-33">
+        <nav class="  w-full ">
+            <!--logo-->
+            <div class="w-full container-sec flex justify-between items-center p-4"> 
+                <div class="left flex justify-between gap-[50px]">
+                    <div class="self-start mt-2">
+                        <span><i class="fa-solid fa-location-dot"></i></span> <span class="text-[20px]">CamFind</span>
+
+                    </div>
+
+                    <div class=" w-full  flex flex-col gap-4">
+                        <div class="search-sec  w-[100%] " >
+                            <div class="bg-white input-field flex">
+                                <div class="w-[50%]">
+                                    <input  class=" w-[100%] border border-gray-300 p-[10px_20px] bg-white " type="text" value="Shopping">
+                                </div>
+                                <div class="w-[50%]">
+                                    <input  class="bg-white w-[100%] p-[10px_20px] border border-gray-300 " type="text" value="Current Location" placeholder="address,neighborhood or city...">  
+                                </div>
+                                <button class="bg-red-500 p-[10px_20px]">search</button>
+                            </div>
+                           
+                        </div>
+                            
+                            <div class="subnav-cont relative ">
+                                <ul class="filter-list "> 
+                                <li class="  hidden md:inline-block pr-[10px] text-blue-300"><a class=" p-[10px_10px]" href="#">Restaurant <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                                
+                                 <div   class="  w-[max] subnav-cat-items rounded-r-lg  bg-white mt-[12px] absolute" >
+                                     <ul class="  w-[100%] subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]   text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Takeout</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bakeries</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Delivery</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dinner</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Coffee & cafes</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Lunch</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Breakfast & Brunch</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> New Restaurant</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Sport Bars & Pubs</a></li>
+                                       
+                 
+                                     </ul>
+                                 </div>
+                                
+                             </li>
+                                <li class="inline-block pr-[10px] text-white"><a class=" p-[10px_10px]" href="#">Home & Garden <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                                 <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                                     <ul class="  w-max subnav-item  grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]   text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Contractor & Handyman</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Plumber</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Electrician</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Painter</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Appliances and Repairs</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Furniture Stores</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Heating & Air Conditioning </a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Moves</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span>Home Cleaning</a></li>
+                                       
+                 
+                                     </ul>
+                                 </div> 
+                             
+                             </li>
+                                <li class="inline-block pr-[10px] text-white"><a class=" p-[10px_10px]" href="#">Auto Services <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                                 <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                                     <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Auto Repair</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Car Wash</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Body shops</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Auto Detailing</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Junkyard</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Tires</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Parking</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Oil Change</a></li>
+                                       
+                 
+                                     </ul>
+                                 </div>
+                             </li>
+                                <li class="inline-block pr-[10px] text-white"><a class=" p-[10px_10px]" href="#">Health & Beauty <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                                 <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                                     <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dentist</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dermatologist</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Nail Salons</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Doctor</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Barbers</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Hair Salons</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Optometrists</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Massage</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Physical Theraphy</a></li>
+                                       
+                 
+                                     </ul>
+                                 </div>
+                             </li>
+                                <li class="inline-block pr-[10px] text-white"><a class=" p-[10px_10px]" href="#">Travel & Activities <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                             <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                                     <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[15px]   ">
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Things to Do</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bookstores</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bike Rentals</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Kids Activities</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Venues & Event</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Churches</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Hotels</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Shopping Malls</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Taxis</a></li>
+                                       
+                 
+                                     </ul>
+                                 </div>
+                             </li>
+                                <li class="inline-block  pr-[10px] text-white"><a class=" p-[10px_10px]" href="#">More <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
+                                 <div   class="  w-[max] subnav-cat-items rounded-l-lg   bg-white mt-[12px]  absolute right-[20px]" >
+                                     <ul class="  w-[100%] subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dry Cleaning</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Apartments</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Real Estate Agent</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Banks & Credit Unions</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Gyms</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Tailors & Alteration</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> House Care Service</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Junk Removal</a></li>
+                                         <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Parking</a></li>
+                                       
+                 
+                                     </ul>
+                                 </div>
+                                 </li></ul>
+                             </div>
+                        </div>
+                       
+                    </div>
+                    <div class=" self-start right flex items-center gap-6">
+                        <div class="">
+                            <ul class="flex gap-6">
+                            <li> <a href="#">CamFind for business professionals</a></li>
+                            <ul><li> <a href="#"> Write a Review</a></li>
+                            <!-- <li> <a href="#">Contact</a> </li> -->
+                            </ul>
+                        </div>
+                        <div class="login-signup">
+                            <a href="#" class=" btn login textColor">Log in</a>
+                            <a href="#" class=" btn signup">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            
+            
+           
+            
+        </nav>
+    </header>
+     <section class="relative ">
+                <!--hero-text-info-->
+                <div class="flex flex-col absolute bottom-0 left-0 w-full bg-linear-to-b from-transparent to-black pl-40 pb-15">
+                    <h1 class="text-[40px] text-white font-bold ">Dave and Buster's</h1>
+                    
+                    <div class=" flex items-center gap-2 ">
+                        <ul class="flex items-center gap-1"><li><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></li>
+                        <li><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></li>
+                        <li><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></li>
+                        <li><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></li>
+                        <li><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></li>
+                    </ul>
+                    <span class="text-white font-semibold">3.0</span>
+                    <span class="text-white font-semibold">(1.1k review)</span>
+                    </div>
+                    <div class="flex items-center"><span><svg width="16" height="16" class="icon_svg"><path d="M8 1.25A6.75 6.75 0 1 0 14.75 8 6.757 6.757 0 0 0 8 1.25Zm3.406 5.48-3.6 3.6a.75.75 0 0 1-1.06 0L5.099 8.684a.75.75 0 0 1 1.06-1.06l1.117 1.115 3.07-3.07a.75.75 0 0 1 1.06 1.061Z"></path></svg></span> <span class="after:content-['\00a0\2022\00a0'] text-white font-semibold">Claimed</span> <span class="after:content-['\00a0\2022\00a0'] text-white font-semibold">$$</span> <p class="text-white font-semibold">American, Arcades, Sport Bars</p></div>
+                    <div class="">
+                           <div class=" w-[80%] flex justify-between items-center">
+                           <div class="flex items-center gap-2" ><span class="text-red-500 font-semibold">closed</span> <p class="flex items-center gap-2 text-white font-semibold">11:00 AM - 12:00 AM(Next Day)</p> <span class=" rounded-[4px] bg-transparent p-[2px_8px] text-white font-semibold">see hours</span> <p class="flex items-center gap-2 text-blue-500 font-semibold"><span><svg width="16" height="16" class="icon_svg  text-blue-500"><path d="M8 14.75A6.75 6.75 0 1 1 14.75 8 6.757 6.757 0 0 1 8 14.75Zm0-12A5.25 5.25 0 1 0 13.25 8 5.256 5.256 0 0 0 8 2.75Z"></path><path d="M8 11.605a.75.75 0 0 1-.75-.75v-3a.75.75 0 0 1 1.5 0v3a.75.75 0 0 1-.75.75ZM8 6.15a.998.998 0 0 1-.92-.62 1 1 0 0 1 1.63-1.09c.182.189.285.439.29.7a.996.996 0 0 1-.62.93 1 1 0 0 1-.38.08Z"></path></svg></span> updated 1 month ago</p></div>
+                        <div class=""><span class="border p-[4px_8px] text-white border-white font-semibold">see all 1.4k photos</span></div>
+                       </div>
+                    </div>
+                    
+                    
+                </div>
+                <!--Background-images-->       
+                 <div class="image-cont flex  overflow-x-scroll  bg-black ">
+                    <!--image container-->
+                    <div class="image-card min-w-[426px]  ">
+                        <img class=" h-[426px]  w-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/h48h7IvKUhNEB7HU4Iq0-Q/l.jpg" width="455.764192139738">
+                    </div>
+                    <div class="image-card min-w-[426px]  h-[426px] ">
+                        <img class=" w-full h-full  object-cover photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US."  src="https://s3-media0.fl.yelpcdn.com/bphoto/L2TGCxBSaS2nfJ0Yof4NQQ/l.jpg" >
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class=" h-[426px]">
+                        <img class="w-full h-full object-cover " alt="Photo of Dave &amp; Buster's - Daly City, CA, US." src="https://s3-media0.fl.yelpcdn.com/bphoto/X63i74cGhGkyE_CXIjvUYQ/l.jpg" width="639.855421686747">
+                    </div>
+                    <div class="image-card min-w-[426px]  h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]">
+                        <img class="object-cover w-full h-full photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US. Adult Snow Cones" height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/H6xnbqrp5GeYfOrw2q5kQA/l.jpg" width="426.0852">
+        
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]">
+                        <img class="w-full h-full object-cover photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/4w4Lia8cCoF03s8UIFbW7w/l.jpg" width="639">
+                    </div>
+                    <div class="image-card min-w-[426px] ">
+                        <img class=" h-[426px]  w-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/h48h7IvKUhNEB7HU4Iq0-Q/l.jpg" width="455.764192139738">
+                    </div>
+                    <div class="image-card min-w-[426px]  h-[426px]">
+                        <img class=" w-full h-full  object-cover photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US."  src="https://s3-media0.fl.yelpcdn.com/bphoto/L2TGCxBSaS2nfJ0Yof4NQQ/l.jpg" >
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class=" h-[426px]">
+                        <img class="w-full h-full object-cover " alt="Photo of Dave &amp; Buster's - Daly City, CA, US." src="https://s3-media0.fl.yelpcdn.com/bphoto/X63i74cGhGkyE_CXIjvUYQ/l.jpg" width="639.855421686747">
+                    </div>
+                    <div class="image-card min-w-[426px]  h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]">
+                        <img class="object-cover w-full h-full photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US. Adult Snow Cones" height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/H6xnbqrp5GeYfOrw2q5kQA/l.jpg" width="426.0852">
+        
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]">
+                        <img class="w-full h-full object-cover photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/4w4Lia8cCoF03s8UIFbW7w/l.jpg" width="639">
+                    </div>
+                    <div class="image-card min-w-[426px] ">
+                        <img class=" h-[426px]  w-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/h48h7IvKUhNEB7HU4Iq0-Q/l.jpg" width="455.764192139738">
+                    </div>
+                    <div class="image-card min-w-[426px]  h-[426px]">
+                        <img class=" w-full h-full  object-cover photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US."  src="https://s3-media0.fl.yelpcdn.com/bphoto/L2TGCxBSaS2nfJ0Yof4NQQ/l.jpg" >
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class=" h-[426px]">
+                        <img class="w-full h-full object-cover " alt="Photo of Dave &amp; Buster's - Daly City, CA, US." src="https://s3-media0.fl.yelpcdn.com/bphoto/X63i74cGhGkyE_CXIjvUYQ/l.jpg" width="639.855421686747">
+                    </div>
+                    <div class="image-card min-w-[426px]  h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]"> 
+                        <img class=" w-full h-full object-cover" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/YsI84PGJjMWctSlgTBacbQ/l.jpg" width="485.6949404761905">
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]">
+                        <img class="object-cover w-full h-full photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US. Adult Snow Cones" height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/H6xnbqrp5GeYfOrw2q5kQA/l.jpg" width="426.0852">
+        
+                    </div>
+                    <div class="image-card min-w-[426px] h-[426px]">
+                        <img class="w-full h-full object-cover photo-header-media-image__09f24__A1WR_" alt="Photo of Dave &amp; Buster's - Daly City, CA, US." height="426" src="https://s3-media0.fl.yelpcdn.com/bphoto/4w4Lia8cCoF03s8UIFbW7w/l.jpg" width="639">
+                    </div>
+        
+        
+                 </div>
+                </section>
+
+
+    <!--main-sect-area-container-->
+  <section class="flex justify-end  w-[1225px]">
+      <div class="flex justify-start w-full border">
+        <div class="left-main-sec overflow-y-scroll ">
+             <!--main section page-->
+            
+             <!--main section-->
+             <section class=" r flex justify-center">
+                <div class="flex w-[1224px] flex-col">
+                    <div>
+                        <div class="border-b-2 w-[70%] pb-5 border-gray-400 ">
+                                <div class="flex items-center gap-4  ">
+                                    <div class="flex border p-[7px_7px] rounded-[4px]"><span><svg width="24" height="24" class="icon_svg"><path d="M17.87 22a.93.93 0 0 1-.46-.12L12 19.08l-5.41 2.84a1 1 0 0 1-1-.08 1 1 0 0 1-.4-1l1-6-4.39-4.26a1 1 0 0 1 .56-1.7L8.4 8l2.7-5.48a1 1 0 0 1 1.8 0L15.6 8l6 .88a1 1 0 0 1 .56 1.7l-4.38 4.27 1 6a1 1 0 0 1-1 1.17l.09-.02ZM12 17c.163.002.323.04.47.11l4.07 2.15-.78-4.54a1 1 0 0 1 .29-.89l3.3-3.21-4.56-.72a1 1 0 0 1-.79-.54l-2-4.14-2 4.14a1 1 0 0 1-.75.54l-4.56.67L8 13.78a1 1 0 0 1 .29.89l-.78 4.54 4.07-2.15A1.12 1.12 0 0 1 12 17Z"></path></svg></span>Write a Review</div><div class="flex items-center border p-[7px_7px] rounded-[4px]"><span><svg width="24" height="24" class="icon_svg"><path d="M16 2a1 1 0 0 1 .95.68L17.72 5H20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h2.28l.77-2.32A1 1 0 0 1 8 2h8Zm-.72 2H8.72L8 6.32A1 1 0 0 1 7 7H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-3a1 1 0 0 1-.95-.68L15.28 4ZM12 7.5a5.5 5.5 0 0 1 5.5 5.5 5.51 5.51 0 0 1-5.5 5.5 5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"></path></svg></span>Add Photo</div><div class="flex items-center border p-[7px_7px] rounded-[4px]"><span ><svg width="24" height="24" class="icon_svg"><path d="m9.095 6.457 1.867-1.775v13.401a1 1 0 1 0 2 0V4.609l1.943 1.848a.998.998 0 0 0 1.414-.035 1 1 0 0 0-.035-1.414L12.69 1.59a1 1 0 0 0-1.38 0L7.717 5.008a1 1 0 0 0 1.379 1.449Z"></path><path d="M21.5 9.076h-3.99a1 1 0 1 0 0 2h2.99v10h-17v-10h2.99a1 1 0 1 0 0-2H2.5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h19a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1Z"></path></svg></span>share</div><div class="flex items-center border p-[7px_7px] rounded-[4px]"><span><svg width="24" height="24" class="icon_svg"><path d="M19 22a.994.994 0 0 1-.581-.186L12 17.229l-6.419 4.585A1 1 0 0 1 4 21V5a3.003 3.003 0 0 1 3-3h10a3.003 3.003 0 0 1 3 3v16a1 1 0 0 1-1 1Zm-7-7c.208 0 .412.065.581.187L18 19.056V5a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v14.057l5.419-3.87A.998.998 0 0 1 12 15Z"></path></svg></span>Save</div></div>
+                                
+                            </div>
+        
+                            <div class="w-[70%] border-b-1 border-gray-400 pb-8">
+                                <h2>From This Business</h2>
+                                <div class=" border flex gap-4">
+                                    <!--image-card-->
+                                    <div class="w-[199px] h-[148px]">
+                                        <img class="w-full h-full object-cover" src=" https://s3-media0.fl.yelpcdn.com/offerphoto/mO4-uQzWMWwQdLrNfYWd7w/o.jpg" alt="">
+                                    </div>
+                                    <div class="self-center">
+                                        <p>$19.99 Eat and Play Combo!</p>
+                                        <p> Get and entree and $10...<span><a href="#"> <span class="text-blue-400">Read more</span></a></span></p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1>Offerings</h1>
+                                <div class="flex  items-center gap-6 border-b-1 pb-8 w-[70%] border-gray-400" >
+                                    <div class="border w-fit flex items-center"><span><svg width="16" height="16" class="icon_svg"><path d="M14.5 1h-3.974a.5.5 0 0 0-.353.854l1.47 1.469L8.254 6.71a.75.75 0 1 0 1.06 1.06l3.388-3.386 1.444 1.443A.5.5 0 0 0 15 5.474V1.5a.5.5 0 0 0-.5-.5Z"></path><path d="M14 14.75H2a.75.75 0 0 1-.75-.75V2A.75.75 0 0 1 2 1.25h3.824a.75.75 0 0 1 0 1.5H2.75v10.5h10.5v-3.133a.75.75 0 1 1 1.5 0V14a.75.75 0 0 1-.75.75Z"></path></svg></span>Website Menu</div>
+                                    <div class="border w-fit flex items-center"><span><svg width="24" height="24" class="icon_svg"><path d="M17 1H4c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h13c2.2 0 4-1.8 4-4V5c0-2.2-1.8-4-4-4ZM5 3h2v18H5V3Zm14 16c0 1.1-.9 2-2 2H9V3h8c1.1 0 2 .9 2 2v14Z"></path><path d="M17.5 8h-7v2h7V8ZM16 11h-4v2h4v-2Z"></path></svg></span>View offerings</div>
+                                </div>
+                            </div>
+                            <div class=" flex  flex-col gap-5">
+                                <h1 class="font-bold text-[25px]">What's the Vibe?</h1>
+                                <div class=" vibe-cont flex items-center gap-8">
+                                    <!--vibe section container-->
+                                     <div class="vibe-card  w-fit p-[10px_7px] flex flex-col gap-3">
+                                    <div class="w-[200px] h-[150px]"><img class="w-full h-full object-cover rounded-[5px]  y-css-3xip89" src="https://s3-media0.fl.yelpcdn.com/bphoto/uOobfDxjSpcX01ZMXhEfPA/258s.jpg" alt=""  loading="lazy" draggable="true"></div>
+                                    <div>
+                                        <h2>Inside</h2>
+                                        <span>288 Photos</span>
+                                    </div>
+                                    <div class="flex"><span><span alt="" aria-hidden="true" role="img" class="icon--24-sound-on-v2 y-css-1u7t9bb"><svg width="24" height="24" class="icon_svg"><path d="M11 22.12a2 2 0 0 1-1.56-.76L5.25 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2.25l4.21-4.4A2 2 0 0 1 13 3.88v16.24a2 2 0 0 1-2 2ZM3 9v6h2.68a1 1 0 0 1 .72.31l4.6 4.82V3.88l-.06.12L6.4 8.69a1 1 0 0 1-.72.31H3Zm13 12.16a1.011 1.011 0 0 1-.3-2 7.54 7.54 0 0 0 0-14.4 1.001 1.001 0 1 1 .6-1.91 9.54 9.54 0 0 1 0 18.22 1 1 0 0 1-.3.09Zm0-4.42a1 1 0 0 1-.56-1.83 3.49 3.49 0 0 0 0-5.82 1 1 0 0 1-.27-1.38 1 1 0 0 1 1.39-.27 5.48 5.48 0 0 1 0 9.12 1 1 0 0 1-.56.18Z"></path></svg></span></span>Loud</div>
+                                    <div class="flex"><span><svg width="24" height="24" class="icon_svg"><path d="M20.92 17.16a.56.56 0 0 0-.05-.08L5.54 1.75A2.57 2.57 0 1 0 1.9 5.38l.74.74a1 1 0 0 0 1.41-1.41L3.31 4a.573.573 0 0 1 .81-.81L7 6v7a4 4 0 0 0 .83 2.42l-1 1A3.59 3.59 0 0 0 5.16 16a3.5 3.5 0 1 0 3.5 3.5 3.41 3.41 0 0 0-.43-1.65l1.18-1.18A4 4 0 0 0 11 17h7l.46.46a3 3 0 1 0 2.5-.3h-.04ZM5.16 21a1.5 1.5 0 1 1 1.06-2.56A1.51 1.51 0 0 1 5.16 21ZM11 15a2 2 0 0 1-2-2V8l7 7h-5Zm9 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span> Good for Kids</div>
+                                    
+                                </div>
+                                     <div class="vibe-card  w-fit p-[10px_7px] flex flex-col gap-3">
+                                    <div class="w-[200px] h-[150px]"><img class="w-full h-full object-cover rounded-[5px]  y-css-3xip89" src="https://s3-media0.fl.yelpcdn.com/bphoto/uOobfDxjSpcX01ZMXhEfPA/258s.jpg" alt=""  loading="lazy" draggable="true"></div>
+                                    <div>
+                                        <h2>Inside</h2>
+                                        <span>288 Photos</span>
+                                    </div>
+                                    <div class="flex"><span><span alt="" aria-hidden="true" role="img" class="icon--24-sound-on-v2 y-css-1u7t9bb"><svg width="24" height="24" class="icon_svg"><path d="M11 22.12a2 2 0 0 1-1.56-.76L5.25 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2.25l4.21-4.4A2 2 0 0 1 13 3.88v16.24a2 2 0 0 1-2 2ZM3 9v6h2.68a1 1 0 0 1 .72.31l4.6 4.82V3.88l-.06.12L6.4 8.69a1 1 0 0 1-.72.31H3Zm13 12.16a1.011 1.011 0 0 1-.3-2 7.54 7.54 0 0 0 0-14.4 1.001 1.001 0 1 1 .6-1.91 9.54 9.54 0 0 1 0 18.22 1 1 0 0 1-.3.09Zm0-4.42a1 1 0 0 1-.56-1.83 3.49 3.49 0 0 0 0-5.82 1 1 0 0 1-.27-1.38 1 1 0 0 1 1.39-.27 5.48 5.48 0 0 1 0 9.12 1 1 0 0 1-.56.18Z"></path></svg></span></span>Loud</div>
+                                    <div class="flex"><span><svg width="24" height="24" class="icon_svg"><path d="M20.92 17.16a.56.56 0 0 0-.05-.08L5.54 1.75A2.57 2.57 0 1 0 1.9 5.38l.74.74a1 1 0 0 0 1.41-1.41L3.31 4a.573.573 0 0 1 .81-.81L7 6v7a4 4 0 0 0 .83 2.42l-1 1A3.59 3.59 0 0 0 5.16 16a3.5 3.5 0 1 0 3.5 3.5 3.41 3.41 0 0 0-.43-1.65l1.18-1.18A4 4 0 0 0 11 17h7l.46.46a3 3 0 1 0 2.5-.3h-.04ZM5.16 21a1.5 1.5 0 1 1 1.06-2.56A1.51 1.51 0 0 1 5.16 21ZM11 15a2 2 0 0 1-2-2V8l7 7h-5Zm9 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span> Good for Kids</div>
+                                    
+                                </div>
+                                     <div class="vibe-card  w-fit p-[10px_7px] flex flex-col gap-3">
+                                    <div class="w-[200px] h-[150px]"><img class="w-full h-full object-cover rounded-[5px]  y-css-3xip89" src="https://s3-media0.fl.yelpcdn.com/bphoto/uOobfDxjSpcX01ZMXhEfPA/258s.jpg" alt=""  loading="lazy" draggable="true"></div>
+                                    <div>
+                                        <h2>Inside</h2>
+                                        <span>288 Photos</span>
+                                    </div>
+                                    <div class="flex"><span><span alt="" aria-hidden="true" role="img" class="icon--24-sound-on-v2 y-css-1u7t9bb"><svg width="24" height="24" class="icon_svg"><path d="M11 22.12a2 2 0 0 1-1.56-.76L5.25 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2.25l4.21-4.4A2 2 0 0 1 13 3.88v16.24a2 2 0 0 1-2 2ZM3 9v6h2.68a1 1 0 0 1 .72.31l4.6 4.82V3.88l-.06.12L6.4 8.69a1 1 0 0 1-.72.31H3Zm13 12.16a1.011 1.011 0 0 1-.3-2 7.54 7.54 0 0 0 0-14.4 1.001 1.001 0 1 1 .6-1.91 9.54 9.54 0 0 1 0 18.22 1 1 0 0 1-.3.09Zm0-4.42a1 1 0 0 1-.56-1.83 3.49 3.49 0 0 0 0-5.82 1 1 0 0 1-.27-1.38 1 1 0 0 1 1.39-.27 5.48 5.48 0 0 1 0 9.12 1 1 0 0 1-.56.18Z"></path></svg></span></span>Loud</div>
+                                    <div class="flex"><span><svg width="24" height="24" class="icon_svg"><path d="M20.92 17.16a.56.56 0 0 0-.05-.08L5.54 1.75A2.57 2.57 0 1 0 1.9 5.38l.74.74a1 1 0 0 0 1.41-1.41L3.31 4a.573.573 0 0 1 .81-.81L7 6v7a4 4 0 0 0 .83 2.42l-1 1A3.59 3.59 0 0 0 5.16 16a3.5 3.5 0 1 0 3.5 3.5 3.41 3.41 0 0 0-.43-1.65l1.18-1.18A4 4 0 0 0 11 17h7l.46.46a3 3 0 1 0 2.5-.3h-.04ZM5.16 21a1.5 1.5 0 1 1 1.06-2.56A1.51 1.51 0 0 1 5.16 21ZM11 15a2 2 0 0 1-2-2V8l7 7h-5Zm9 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg></span> Good for Kids</div>
+                                    
+                                </div>
+                            
+                                </div>
+                                <div class="flex gap-2 items-center border border-gray-400 w-fit p-[8px_15px] rounded-[5px]"> 1 more attribute<span><i class="fa-solid fa-angle-down"></i></span></div>
+                               
+                            </div>
+                            
+                
+                    
+                    <div class="border-b-1 border-gray-400 w-[70%] pb-10  ">
+                        <h1 class="font-bold text-[23px] pb-3">Review Highlights</h1>
+                        <div class="review-cont flex flex-col gap-4">
+                            <div class="review-item flex items-start w-[80%] gap-2">
+                                 <div class="min-w-[60px] h-[60px]"><img class="w-full h-full object-cover rounded-[5px] y-css-xl4y6g" src="https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/60s.jpg" srcset="https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/180s.jpg 3.00x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/168s.jpg 2.80x" alt="dave-and-busters-daly-city-11 photo KemeuxAMTtwwhSnFfm6-qQ"  loading="lazy" draggable="true"></div>
+                            <div>
+                                <p>“Came on Wednesday little after 4pm with the kids for half off <span class="hover:underline text-blue-500">Wednesday</span> and happy hour half off drinks starting at 4pm.” in <span class="hover:underline text-blue-500">37 reviews</span></p>
+                            </div>  
+                            </div>
+                            <div class="review-item flex items-start w-[80%] gap-2">
+                                 <div class="min-w-[60px] min-h-[60px] "><img class="w-full h-full object-cover rounded-[5px] y-css-xl4y6g" src="https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/60s.jpg" srcset="https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/180s.jpg 3.00x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/168s.jpg 2.80x" alt="dave-and-busters-daly-city-11 photo KemeuxAMTtwwhSnFfm6-qQ"  loading="lazy" draggable="true"></div>
+                            <div>
+                                <p>“Came on Wednesday little after 4pm with the kids for half off <span class="hover:underline text-blue-500">Wednesday</span> and happy hour half off drinks starting at 4pm.” in <span class="hover:underline text-blue-500">37 reviews</span></p>
+                            </div>  
+                            </div>
+                            <div class="review-item flex items-start w-[80%] gap-2">
+                                 <div class="min-w-[60px] min-h-[60px]"><img class="w-full h-full object-cover rounded-[5px] y-css-xl4y6g" src="https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/60s.jpg" srcset="https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/180s.jpg 3.00x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/bphoto/KemeuxAMTtwwhSnFfm6-qQ/168s.jpg 2.80x" alt="dave-and-busters-daly-city-11 photo KemeuxAMTtwwhSnFfm6-qQ"  loading="lazy" draggable="true"></div>
+                            <div>
+                                <p>“Came on Wednesday little after 4pm with the kids for half off <span class="hover:underline text-blue-500">Wednesday</span> and happy hour half off drinks starting at 4pm.” in <span class="hover:underline text-blue-500">37 reviews</span></p>
+                            </div>  
+                            </div>
+                           
+                        </div>
+                    </div>
+                        <div class="w-[70%] flex flex-col gap-5 border-b-1 border-gray-400 pb-10">
+                            <div class=" flex justify-between items-center ">
+                                <h1 class="font-bold text-[20px]">Location & Hours</h1>
+                                <h2 class="flex items-center font-bold text-[20px]">Suggest an Edit <span><svg width="24" height="24" class="icon_svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m2.277 14.83-1.23 7a1 1 0 0 0 .29.88 1 1 0 0 0 .71.29.473.473 0 0 0 .13-.02l7-1.23a.92.92 0 0 0 .53-.28l9.87-9.86 2.47-2.47a3.34 3.34 0 0 0 0-4.7L19.607 2a3.34 3.34 0 0 0-4.7 0l-2.47 2.44-9.88 9.86a.92.92 0 0 0-.28.53zm15.21-3.93-7.65 7.63-4.32-4.34 7.63-7.63 4.34 4.34zm3.17-5.05-2.46-2.46a1.33 1.33 0 0 0-1.88 0l-1.76 1.76 4.34 4.34 1.76-1.76a1.33 1.33 0 0 0 0-1.88zm-16.48 9.81 4.19 4.19-5.09.9.9-5.09z"></path></svg></span></h2>
+                            </div>
+                            <div class="flex gap-12">
+                                <div class="flex flex-col w-[37%] gap-4">
+                                    <!--mini-map--><div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7959.270458809012!2d9.73451283554175!3d4.094428525142416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106112b879c28475%3A0x79f7dba4dc22fd1f!2sWhite%20House%20Restaurant!5e0!3m2!1sen!2scm!4v1747720410095!5m2!1sen!2scm" width="315" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                             <h3>Stade de Bonamoussadi,<br> Douala</h3>
+                                            <h3>Daly City, CA 94015</h3>
+                                        </div>
+                                        <span class="border border-gray-400 rounded-[5px] w-fit p-[5px_8px]">Get Direction</span>
+                                       
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex flex-col">
+                                        <span>Mon</span>
+                                        <span>Tue</span>
+                                        <span>Wed</span>
+                                        <span>Thurs</span>
+                                        <span>Fri</span>
+                                        <span>Sat</span>
+                                        <span>Sun</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span>11:00 AM - 12:00 AM (Next day)</span>
+                                        <span>11:00 AM - 12:00 AM (Next day)</span>
+                                        <span>11:00 AM - 12:00 AM (Next day)</span>
+                                        <span>11:00 AM - 12:00 AM (Next day)</span>
+                                        <span>11:00 AM - 12:00 AM (Next day)</span>
+                                        <span>11:00 AM - 12:00 AM (Next day)</span>
+                                        <span>11:00 AM - 12:00 AM (Next day)</span>
+                                    </div>
+                                    <a href="#" class="text-blue-500">Open now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-8 border-b-1  border-gray-400 pb-10 w-[70%]">
+                            <h1 class="font-bold text-[20px]">Amenties and More</h1>
+                            <div class="flex justify-between w-[60%]">
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-3"><span><svg width="24" height="24" class="icon_svg"><path d="M23.596 17a4.97 4.97 0 0 0-1.836-3.839L17.753 4.77a1.114 1.114 0 0 0-.464-.53.983.983 0 0 0-.432-.124c-.013 0-.023-.008-.036-.008h-4.843a1 1 0 0 0 0 2h1.656a3.534 3.534 0 0 0-.09 3.006l1.817 4.107A5.018 5.018 0 0 0 13.703 16H9.748a2.537 2.537 0 0 1-1.488-2.107c0-1.486 1.971-1.895 2.05-1.91a1 1 0 0 0 .815-.983V9a.998.998 0 0 0-1-1h-2.03V5a3.003 3.003 0 0 0-3-3H1.38a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h.28a6.56 6.56 0 0 0-1.115 5.203.99.99 0 0 0 .807.77c0 .01-.005.017-.005.027a4.056 4.056 0 1 0 8.11 0h5.06a4.055 4.055 0 1 0 8.109 0l-.001-.006a.996.996 0 0 0 .97-.994ZM9.125 10v.249a3.987 3.987 0 0 0-2.865 3.644A3.909 3.909 0 0 0 6.86 16H2.405a4.571 4.571 0 0 1 1.621-3.646 1 1 0 0 0-.079-1.587L2.832 10h6.293ZM2.38 4h2.715a1 1 0 0 1 1 1v3H2.832c-.153.007-.305.03-.452.072V4ZM5.4 20.056A2.058 2.058 0 0 1 3.347 18h4.11a2.058 2.058 0 0 1-2.056 2.056ZM21.425 16h-5.658a3.001 3.001 0 0 1 5.658 0Zm-5.93-9.182c.175-.273.431-.484.732-.603l2.783 5.827c-.14-.012-.272-.042-.414-.042-.502.007-1 .09-1.477.248l-1.744-3.943a1.54 1.54 0 0 1 .12-1.487Zm3.076 13.238A2.058 2.058 0 0 1 16.517 18h4.109a2.058 2.058 0 0 1-2.055 2.056Z"></path></svg></span><span>Offers delivery</span></div>
+                                    <div class="flex items-center gap-3"><span><svg width="24" height="24" class="icon_svg"><path d="m13.41 12 5.3-5.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1.004 1.004 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"></path></svg></span> <span>Takes Reservation</span></div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-3"><span><svg width="24" height="24" class="icon_svg"><path d="M22 7h-5.177l-1.16-4.33a1 1 0 1 0-1.931.518L14.752 7H9.228l1.021-3.812a1.002 1.002 0 0 0-1.096-1.254 1 1 0 0 0-.836.737L7.157 7H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h.88l1.318 6.588A3.006 3.006 0 0 0 7.14 22h9.72a3.006 3.006 0 0 0 2.942-2.411L21.12 13H22a1 1 0 0 0 1-1V8a.998.998 0 0 0-1-1Zm-4.16 12.197a1.001 1.001 0 0 1-.98.803H7.14a1.001 1.001 0 0 1-.98-.804L4.92 13h14.16l-1.24 6.197ZM21 11H3V9h3.621l-.056.209a1 1 0 1 0 1.932.518L8.692 9h6.596l.215.8a1 1 0 0 0 1.932-.517L17.359 9H21v2Z"></path></svg></span><span>Offer take-out</span></div>
+                                    <div class="flex items-center gap-3"><span><svg width="24" height="24" class="icon_svg"><path d="M9.46 17.52a1 1 0 0 1-.71-.29l-4-4a1.004 1.004 0 1 1 1.42-1.42l3.25 3.26 8.33-8.34a1.004 1.004 0 0 1 1.42 1.42l-9 9a1 1 0 0 1-.71.37Z"></path></svg></span> <span>Many vegetarian options</span></div>
+                                </div>
+                                
+                            </div>
+                            <div><span class="border p-[8px_25px] rounded-[5px] border-gray-400">26 More Attributes</span></div>
+                        </div>
+                        <div class="w-[70%] flex flex-col  border-b-1 gap-4 pb-8">
+                            <h1 class="font-bold text-[20px]">About the Business</h1>
+                            <p>White House Restaurant in Douala Akwa specializes in African and Cameroonian cuisine. They offer a variety of local delicacies and have a rich menu, serving as a restaurant, bar, and providing catering services. The restaurant is known for its unique and special African cuisine buffet. The service is different from others.</p>
+                            <div><span class="border p-[5px_15px] rounded-[5px] border-gray-400">Read more</span></div>
+                        </div>
+                        <!--recommended-review-section-->
+                        <div class=" flex flex-col gap-2">
+                            <h1>Recommended Reviews</h1>
+                            <div class="flex justify-between w-[70%] p-[15px_20px] shadow-2xl rounded-[5px]">
+                                <div class="flex gap-3 items-start">
+                                    <div>
+                                        <img class=" y-css-1lq2n1z" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2.yji-19e0a8ff85b15f4bbd79.png" srcset="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2.yji-19e0a8ff85b15f4bbd79.png 1x, https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2@2x.yji-cfb49ee371b5b7711e94.png 2x" alt="Photo of Username" height="64" width="64" loading="lazy" draggable="true">
+                                    </div>
+                                    <div class="review-temp">
+                                    <h1>Username</h1>
+                                    <span>Location</span>
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M11.231 1.25H4.769A3.523 3.523 0 0 0 1.25 4.77v6.46a3.523 3.523 0 0 0 3.519 3.52h6.462a3.524 3.524 0 0 0 3.519-3.52V4.77a3.523 3.523 0 0 0-3.519-3.52Zm-6.462 1.5h6.462a2.022 2.022 0 0 1 2.019 2.02v6.223a8.71 8.71 0 0 0-2.218-1.177c.164-.395.249-.819.25-1.247V7.562a3.281 3.281 0 1 0-6.563 0v1.007c0 .428.085.852.249 1.247-.792.283-1.54.68-2.218 1.177V4.77a2.022 2.022 0 0 1 2.019-2.02Zm5.012 5.82a1.781 1.781 0 0 1-3.562 0V7.561a1.781 1.781 0 0 1 3.562 0v1.007Zm1.45 4.68H4.769a2.007 2.007 0 0 1-1.49-.668.415.415 0 0 1 .15-.237 7.259 7.259 0 0 1 2.498-1.254 3.21 3.21 0 0 0 4.144.002c.907.25 1.756.676 2.5 1.252.076.06.129.143.15.237a2.007 2.007 0 0 1-1.49.668Z"></path></svg></span><span>0</span></div>
+                                        <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M11.231 14.75H4.769a3.524 3.524 0 0 1-3.519-3.52V4.77a3.523 3.523 0 0 1 3.519-3.52h6.462a3.523 3.523 0 0 1 3.519 3.52v6.46a3.523 3.523 0 0 1-3.519 3.52Zm-6.462-12A2.022 2.022 0 0 0 2.75 4.77v6.46a2.022 2.022 0 0 0 2.019 2.02h6.462a2.022 2.022 0 0 0 2.019-2.02V4.77a2.022 2.022 0 0 0-2.019-2.02H4.769Z"></path><path d="M11.226 7.229a.5.5 0 0 0-.404-.341l-1.64-.239-.734-1.486a.522.522 0 0 0-.896 0L6.818 6.65l-1.64.239a.5.5 0 0 0-.277.853l1.187 1.156-.28 1.633a.5.5 0 0 0 .725.528L8 10.286l1.467.772a.498.498 0 0 0 .725-.528l-.28-1.633L11.1 7.741a.5.5 0 0 0 .127-.512Z"></path></svg></span><span>0</span></div>
+                                        <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M5.076 6.674a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M11.231 1.25H4.769A3.523 3.523 0 0 0 1.25 4.77v6.46c.002.441.087.878.252 1.287l-.003.003.005.005a3.519 3.519 0 0 0 3.265 2.225h6.462a3.524 3.524 0 0 0 3.519-3.52V4.77a3.523 3.523 0 0 0-3.519-3.52ZM2.75 11.23V4.77a2.022 2.022 0 0 1 2.019-2.02h6.462a2.022 2.022 0 0 1 2.019 2.02v4.096l-1.363-1.08a4.097 4.097 0 0 0-5.3.163l-3.822 3.433c-.004-.05-.015-.1-.015-.152Zm8.481 2.02H4.769a2 2 0 0 1-1.298-.486l4.118-3.7a2.6 2.6 0 0 1 3.365-.103l2.296 1.82v.45a2.022 2.022 0 0 1-2.019 2.019Z"></path></svg></span> <span>0</span></div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class=" flex flex-col">
+                                    <div class="flex items-center">
+                                        <div class="flex gap-1">
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                        </div>
+                                        <p class="text-gray-400">select your rating</p>
+                                    </div>
+                                    <p>Start your review of the white House Restaurant</p>
+                                </div>
+                              
+                            </div>
+                          <div class="flex items-center justify-between gap-8  w-[100%] ">
+                            <div class="flex flex-col" >
+                                <!--overall-ratings-->
+                                <div>Overall ratings</div>
+                                <div> <div class="flex  gap-1">
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            <span><svg width="32" height="32" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                        </div></div>
+                                <h3>1079 reviews</h3>
+                            </div>
+                            <div class="flex flex-col gap-6 mt-8 w-[76%] ">
+                                  <!--progress-bar-test-->
+                            <div class=" progress-bar gap-5 relative flex items-center">
+                                <div><span>5 Stars</span></div>
+                                <div class="w-[50%] h-2 bg-gray-400 rounded-full">
+                                    <div class="h-full bg-orange-500 w-[80%] rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" progress-bar gap-5 relative flex items-center">
+                                <div><span>4 Stars</span></div>
+                                <div class="w-[50%] h-2 bg-gray-400   rounded-full">
+                                    <div class="h-full bg-orange-500 w-[100%] rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" progress-bar gap-5 relative flex items-center">
+                                <div ><span>3 Stars</span></div>
+                                <div class="w-[50%] h-2 bg-gray-400 rounded-full">
+                                    <div class="h-full bg-orange-500 w-[50%] rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" progress-bar gap-5 relative flex   items-center">
+                                <div><span>2 Stars</span></div>
+                                <div class="w-[50%] h-2 bg-gray-400 rounded-full">
+                                    <div class="h-full bg-orange-500 w-[25%] rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" progress-bar gap-5 relative flex justify-start items-center">
+                                <span class="">1 Star</span>
+                                
+                                    <div class="w-[50%] h-2 bg-gray-400 rounded-full">
+                                    <div class="h-full bg-orange-500 w-[35%] rounded-full">
+                                    </div>
+                                    
+                                
+                            </div>
+                            </div>
+                           
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <!--reviews-section-->
+                        <div class="flex items-center justify-between w-[70%]">
+                            <div class="flex items-center gap-2">
+                            <div class="border w-max rounded-full p-[5px_15px] border-gray-400"><span class="text-[14px]">Yelp Sort</span></div>
+                            <div class="border w-max rounded-full p-[5px_15px] flex items-center gap-1 border-gray-400"><span class="text-[14px]">English(1067)</span><span><i class="fa-solid fa-angle-down"></i></span></div>
+                            <div class="border w-max rounded-full p-[5px_15px] flex items-center gap-1 border-gray-400"><span class="text-[14px]">Filter by rating</span><span><i class="fa-solid fa-angle-down"></i></span></div>
+                        </div>
+                        
+                              <div class="border border-gray-400 w-max relative rounded-[3px] ">
+                                <input type="text" placeholder="search review" class="p-[7px_7px] ">
+                                <svg class="absolute top-3 right-3"  width="16" height="16" class="icon_svg"><path d="m14.448 13.388-2.171-2.172A6.215 6.215 0 0 0 2.989 2.99a6.215 6.215 0 0 0 8.227 9.288l2.171 2.171a.75.75 0 0 0 1.06-1.06ZM4.049 10.72a4.718 4.718 0 1 1 3.336 1.381 4.683 4.683 0 0 1-3.336-1.381Z"></path></svg>
+                            </div>
+        
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="review-cont-sec border w-[70%] flex flex-col gap-4 mt-8">
+                                <div class="flex justify-between items-center">
+                                     <div class="flex gap-3 items-start">
+                                        <div>
+                                            <img class=" y-css-1lq2n1z" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2.yji-19e0a8ff85b15f4bbd79.png" srcset="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2.yji-19e0a8ff85b15f4bbd79.png 1x, https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2@2x.yji-cfb49ee371b5b7711e94.png 2x" alt="Photo of Username" height="64" width="64" loading="lazy" draggable="true">
+                                        </div >
+                                        <div class="review-temp ">
+                                        <h1>Username</h1>
+                                        <span>Location</span>
+                                        <div class="flex items-center gap-4">
+                                            <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M11.231 1.25H4.769A3.523 3.523 0 0 0 1.25 4.77v6.46a3.523 3.523 0 0 0 3.519 3.52h6.462a3.524 3.524 0 0 0 3.519-3.52V4.77a3.523 3.523 0 0 0-3.519-3.52Zm-6.462 1.5h6.462a2.022 2.022 0 0 1 2.019 2.02v6.223a8.71 8.71 0 0 0-2.218-1.177c.164-.395.249-.819.25-1.247V7.562a3.281 3.281 0 1 0-6.563 0v1.007c0 .428.085.852.249 1.247-.792.283-1.54.68-2.218 1.177V4.77a2.022 2.022 0 0 1 2.019-2.02Zm5.012 5.82a1.781 1.781 0 0 1-3.562 0V7.561a1.781 1.781 0 0 1 3.562 0v1.007Zm1.45 4.68H4.769a2.007 2.007 0 0 1-1.49-.668.415.415 0 0 1 .15-.237 7.259 7.259 0 0 1 2.498-1.254 3.21 3.21 0 0 0 4.144.002c.907.25 1.756.676 2.5 1.252.076.06.129.143.15.237a2.007 2.007 0 0 1-1.49.668Z"></path></svg></span><span>0</span></div>
+                                            <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M11.231 14.75H4.769a3.524 3.524 0 0 1-3.519-3.52V4.77a3.523 3.523 0 0 1 3.519-3.52h6.462a3.523 3.523 0 0 1 3.519 3.52v6.46a3.523 3.523 0 0 1-3.519 3.52Zm-6.462-12A2.022 2.022 0 0 0 2.75 4.77v6.46a2.022 2.022 0 0 0 2.019 2.02h6.462a2.022 2.022 0 0 0 2.019-2.02V4.77a2.022 2.022 0 0 0-2.019-2.02H4.769Z"></path><path d="M11.226 7.229a.5.5 0 0 0-.404-.341l-1.64-.239-.734-1.486a.522.522 0 0 0-.896 0L6.818 6.65l-1.64.239a.5.5 0 0 0-.277.853l1.187 1.156-.28 1.633a.5.5 0 0 0 .725.528L8 10.286l1.467.772a.498.498 0 0 0 .725-.528l-.28-1.633L11.1 7.741a.5.5 0 0 0 .127-.512Z"></path></svg></span><span>0</span></div>
+                                            <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M5.076 6.674a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M11.231 1.25H4.769A3.523 3.523 0 0 0 1.25 4.77v6.46c.002.441.087.878.252 1.287l-.003.003.005.005a3.519 3.519 0 0 0 3.265 2.225h6.462a3.524 3.524 0 0 0 3.519-3.52V4.77a3.523 3.523 0 0 0-3.519-3.52ZM2.75 11.23V4.77a2.022 2.022 0 0 1 2.019-2.02h6.462a2.022 2.022 0 0 1 2.019 2.02v4.096l-1.363-1.08a4.097 4.097 0 0 0-5.3.163l-3.822 3.433c-.004-.05-.015-.1-.015-.152Zm8.481 2.02H4.769a2 2 0 0 1-1.298-.486l4.118-3.7a2.6 2.6 0 0 1 3.365-.103l2.296 1.82v.45a2.022 2.022 0 0 1-2.019 2.019Z"></path></svg></span> <span>0</span></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div><span><svg width="24" height="24" class="icon_svg"><path d="M12 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-16 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg></span></div>
+                                </div>
+                                <div class="flex gap-10"> <div class="flex  gap-1">
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            </div>
+                                        <span class="text-gray-400">Mar,10 2025</span></div>
+                                <div><p class="text-justify">Visited on a Tuesday afternoon. The atmosphere was...present. Service was adequate, though a bit slow during peak hours. Selection of goods was typical for this type of establishment. Value seemed fair, but nothing extraordinary. Would consider returning for a second visit if in the area.</p></div>
+                                <div class="flex gap-6 ">
+                                    <!--review-icons-->
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                            <img class="w-[24px] h-[24px] object-cover" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="">
+                                        </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Helpful</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                        <img class="w-[24px] h-[24px]" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="">                            </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Thanks</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                        <img class="w-[24px] h-[24px]" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="">                            </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Love this</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                    <img class="w-[24px] h-[24px]" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="">                            </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Oh no</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-cont-sec border w-[70%] flex flex-col gap-4 mt-8">
+                                <div class="flex justify-between items-center">
+                                     <div class="flex gap-3 items-start">
+                                        <div>
+                                            <img class=" y-css-1lq2n1z" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2.yji-19e0a8ff85b15f4bbd79.png" srcset="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2.yji-19e0a8ff85b15f4bbd79.png 1x, https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2@2x.yji-cfb49ee371b5b7711e94.png 2x" alt="Photo of Username" height="64" width="64" loading="lazy" draggable="true">
+                                        </div >
+                                        <div class="review-temp ">
+                                        <h1>Username</h1>
+                                        <span>Location</span>
+                                        <div class="flex items-center gap-4">
+                                            <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M11.231 1.25H4.769A3.523 3.523 0 0 0 1.25 4.77v6.46a3.523 3.523 0 0 0 3.519 3.52h6.462a3.524 3.524 0 0 0 3.519-3.52V4.77a3.523 3.523 0 0 0-3.519-3.52Zm-6.462 1.5h6.462a2.022 2.022 0 0 1 2.019 2.02v6.223a8.71 8.71 0 0 0-2.218-1.177c.164-.395.249-.819.25-1.247V7.562a3.281 3.281 0 1 0-6.563 0v1.007c0 .428.085.852.249 1.247-.792.283-1.54.68-2.218 1.177V4.77a2.022 2.022 0 0 1 2.019-2.02Zm5.012 5.82a1.781 1.781 0 0 1-3.562 0V7.561a1.781 1.781 0 0 1 3.562 0v1.007Zm1.45 4.68H4.769a2.007 2.007 0 0 1-1.49-.668.415.415 0 0 1 .15-.237 7.259 7.259 0 0 1 2.498-1.254 3.21 3.21 0 0 0 4.144.002c.907.25 1.756.676 2.5 1.252.076.06.129.143.15.237a2.007 2.007 0 0 1-1.49.668Z"></path></svg></span><span>0</span></div>
+                                            <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M11.231 14.75H4.769a3.524 3.524 0 0 1-3.519-3.52V4.77a3.523 3.523 0 0 1 3.519-3.52h6.462a3.523 3.523 0 0 1 3.519 3.52v6.46a3.523 3.523 0 0 1-3.519 3.52Zm-6.462-12A2.022 2.022 0 0 0 2.75 4.77v6.46a2.022 2.022 0 0 0 2.019 2.02h6.462a2.022 2.022 0 0 0 2.019-2.02V4.77a2.022 2.022 0 0 0-2.019-2.02H4.769Z"></path><path d="M11.226 7.229a.5.5 0 0 0-.404-.341l-1.64-.239-.734-1.486a.522.522 0 0 0-.896 0L6.818 6.65l-1.64.239a.5.5 0 0 0-.277.853l1.187 1.156-.28 1.633a.5.5 0 0 0 .725.528L8 10.286l1.467.772a.498.498 0 0 0 .725-.528l-.28-1.633L11.1 7.741a.5.5 0 0 0 .127-.512Z"></path></svg></span><span>0</span></div>
+                                            <div class="flex items-center gap-2"><span><svg width="16" height="16" class="icon_svg"><path d="M5.076 6.674a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M11.231 1.25H4.769A3.523 3.523 0 0 0 1.25 4.77v6.46c.002.441.087.878.252 1.287l-.003.003.005.005a3.519 3.519 0 0 0 3.265 2.225h6.462a3.524 3.524 0 0 0 3.519-3.52V4.77a3.523 3.523 0 0 0-3.519-3.52ZM2.75 11.23V4.77a2.022 2.022 0 0 1 2.019-2.02h6.462a2.022 2.022 0 0 1 2.019 2.02v4.096l-1.363-1.08a4.097 4.097 0 0 0-5.3.163l-3.822 3.433c-.004-.05-.015-.1-.015-.152Zm8.481 2.02H4.769a2 2 0 0 1-1.298-.486l4.118-3.7a2.6 2.6 0 0 1 3.365-.103l2.296 1.82v.45a2.022 2.022 0 0 1-2.019 2.019Z"></path></svg></span> <span>0</span></div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div><span><svg width="24" height="24" class="icon_svg"><path d="M12 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-16 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg></span></div>
+                                </div>
+                                <div class="flex gap-10"> <div class="flex  gap-1">
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(255,135,66,1)" opacity="1" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                                <span><svg width="20" height="20" viewBox="0 0 32 32"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M6.4 0H16V32H6.4C2.86538 32 0 29.1346 0 25.6V6.4C0 2.86538 2.86538 0 6.4 0Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M25.6 0C29.1346 0 32 2.86538 32 6.4V25.6C32 29.1346 29.1346 32 25.6 32H16V0H25.6Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M16 21.3978L20.1518 23.5378C20.3804 23.6557 20.6409 23.697 20.8949 23.6555C21.5489 23.5488 21.9926 22.932 21.8859 22.2779L21.1336 17.668L24.4519 14.3807C24.6346 14.1997 24.7544 13.9647 24.7934 13.7104C24.894 13.0553 24.4445 12.4427 23.7895 12.3421L19.1727 11.6331L17.0717 7.4614C16.956 7.23163 16.7695 7.04513 16.5397 6.92941C15.9478 6.63131 15.2263 6.86949 14.9282 7.4614L12.8272 11.6331L8.21047 12.3421C7.95619 12.3812 7.72118 12.5009 7.54013 12.6837C7.0737 13.1545 7.07727 13.9143 7.54809 14.3807L10.8664 17.668L10.114 22.2779C10.0726 22.5318 10.1139 22.7923 10.2317 23.021C10.5354 23.6101 11.2591 23.8415 11.8482 23.5378L16 21.3978V21.3978Z"></path></svg></span>
+                                            </div>
+                                        <span class="text-gray-400">Mar,10 2025</span></div>
+                                <div><p class="text-justify">Visited on a Tuesday afternoon. The atmosphere was...present. Service was adequate, though a bit slow during peak hours. Selection of goods was typical for this type of establishment. Value seemed fair, but nothing extraordinary. Would consider returning for a second visit if in the area.</p></div>
+                                            <div class="flex items-center gap-8">
+                                                <div class="w-max">
+                                                    <img class="w-[174px] h-[132px] rounded-[5px] object-cover y-css-xl4y6g" src="https://s3-media0.fl.yelpcdn.com/bphoto/6bMgv6x3BTMNTxLIG7NJ5g/348s.jpg" alt="" loading="eager" draggable="true">
+                                                </div>
+                                                <div class="w-max">
+                                                   <img class="w-[174px] h-[132px] rounded-[5px] object-cover y-css-xl4y6g" src="https://s3-media0.fl.yelpcdn.com/bphoto/RJmecqjPKd7WQxD7dVA5Gg/348s.jpg" alt="" loading="eager" draggable="true">
+                                                </div>
+                                                <div class="w-max">
+                                                    <img class="w-[174px] h-[132px] rounded-[5px] object-cover y-css-xl4y6g" src="https://s3-media0.fl.yelpcdn.com/bphoto/OPNce4ne3HdaBbfSX04-3w/348s.jpg" alt="" loading="eager" draggable="true">
+                                                </div>
+                                                <div class="w-max">
+                                                    <img class="w-[174px] h-[132px] rounded-[5px] object-cover y-css-xl4y6g" src="https://s3-media0.fl.yelpcdn.com/bphoto/w8c6rG68GzwTkit3v79QuA/348s.jpg" alt="" loading="eager" draggable="true">
+                                                </div>
+                                            </div>
+                                            <div><a href="#" class="text-blue-500 hover:underline">See all Photos from Rapelo</a></div>
+        
+        
+                                <div class="flex gap-6 ">
+                                    <!--review-icons-->
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                            <img class="w-[24px] h-[24px] object-cover" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="">
+                                        </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Helpful</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                        <img class="w-[24px] h-[24px]" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="">                            </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Thanks</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                        <img class="w-[24px] h-[24px]" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="">                            </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Love this</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class=" w-max border border-gray-400 rounded-full p-[7px_7px]">
+                                    <img class="w-[24px] h-[24px]" src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="">                            </div>
+                                        <div class="flex gap-1 text-gray-500"><span class="text-[12px]">Oh no</span> <span class="text-[12px] font-semibold">0</span></div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                          
+                    
+             </section>
+        </div>
+        <div class=" sticky top-right-main-sec border p-[7px_8px]  flex flex-col gap-3 w-[365px] h-[296px]">
+            <div class="flex justify-between  border items-center">
+                <a href="#"><span>westfield.com</span></a>
+                <span><svg width="24" height="24" class="icon_svg"><path d="M20.47 3.07a.5.5 0 0 1 .53.46v6a.5.5 0 0 1-.39.49.58.58 0 0 1-.19 0 .47.47 0 0 1-.35-.15L17.8 7.6l-5 5a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41l5-5-2.27-2.27a.5.5 0 0 1 .35-.85h6ZM20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6a1 1 0 0 1 0 2H5v14h14v-5a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1Z"></path></svg></span>
+            </div>
+            <div class="flex justify-between border items-center"> <a href="#"><span>(415) 512-6776</span></a>
+                <span>
+<svg width="24" height="24" class="icon_svg"><path d="M13.59 23.07A7 7 0 0 1 8.64 21L3 15.36a7 7 0 0 1 0-9.9l1.39-1.41a1 1 0 0 1 1.42 0l5 5a1 1 0 0 1 0 1.41 2.001 2.001 0 0 0 2.83 2.83 1 1 0 0 1 1.41 0l4.95 5a1 1 0 0 1 0 1.42L18.54 21a7 7 0 0 1-4.95 2.07ZM5.1 6.17l-.71.71a5 5 0 0 0 0 7.07l5.66 5.66a5 5 0 0 0 7.07 0l.71-.71-3.63-3.63a4 4 0 0 1-4.86-.61 4 4 0 0 1-.61-4.86L5.1 6.17Zm12.78 5.95a1 1 0 0 1-1-1 4 4 0 0 0-4-4 1 1 0 0 1 0-2 6 6 0 0 1 6 6 1 1 0 0 1-1 1Zm4.19 0a1 1 0 0 1-1-1 8.19 8.19 0 0 0-8.19-8.19 1 1 0 0 1 0-2c5.625.006 10.184 4.565 10.19 10.19a1 1 0 0 1-1 1Z"></path></svg>                </span></div>
+            <div class="flex justify-between  border items-center">
+                 <div class="flex flex-col "><span class="cursor-pointer blue text-blue-500">Get direction</span> <span>Rue Akwa, White House Restaurant</span></div>
+                <span>
+<svg width="24" height="24" viewBox="0 0 22 22" class="icon_svg"><path d="M11 22a3 3 0 0 1-2.12-.88l-8-8a3 3 0 0 1 0-4.24l8-8a3 3 0 0 1 4.24 0l8 8a3 3 0 0 1 0 4.24l-8 8A3 3 0 0 1 11 22Zm0-20a1 1 0 0 0-.71.29l-8 8a1 1 0 0 0 0 1.42l8 8a1 1 0 0 0 1.42 0l8-8a1 1 0 0 0 0-1.42l-8-8A1 1 0 0 0 11 2Zm4.85 8.15a.48.48 0 0 1 0 .66l-3 3a.47.47 0 0 1-.35.15.43.43 0 0 1-.19 0 .5.5 0 0 1-.31-.46v-2.05a1 1 0 0 1-.25.05h-2a1 1 0 0 0-1 1v1a1 1 0 1 1-2 0v-1a3 3 0 0 1 3-3h2a1 1 0 0 1 .25.05V7.5a.5.5 0 0 1 .31-.5.47.47 0 0 1 .54.15l3 3Z"></path></svg>                </span>
+            </div>
+            <div class="mx-2 border text-center justify-center  flex items-center rounded-[5px]"><span><svg width="24" height="24" class="icon_svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m2.277 14.83-1.23 7a1 1 0 0 0 .29.88 1 1 0 0 0 .71.29.473.473 0 0 0 .13-.02l7-1.23a.92.92 0 0 0 .53-.28l9.87-9.86 2.47-2.47a3.34 3.34 0 0 0 0-4.7L19.607 2a3.34 3.34 0 0 0-4.7 0l-2.47 2.44-9.88 9.86a.92.92 0 0 0-.28.53zm15.21-3.93-7.65 7.63-4.32-4.34 7.63-7.63 4.34 4.34zm3.17-5.05-2.46-2.46a1.33 1.33 0 0 0-1.88 0l-1.76 1.76 4.34 4.34 1.76-1.76a1.33 1.33 0 0 0 0-1.88zm-16.48 9.81 4.19 4.19-5.09.9.9-5.09z"></path></svg></span> <span>Suggest and edit</span></div>
+        </div>
+    </div>
+
+  </section>
+    
+
+
+<!--footer-->    
+</body>
+</html>
