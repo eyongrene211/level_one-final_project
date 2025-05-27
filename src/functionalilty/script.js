@@ -21,3 +21,8 @@ closed.addEventListener('click',()=>{
     navMenu.classList.add("hidden");
   }, 300);
 })
+
+
+
+/*For Product-page */
+    

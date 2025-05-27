@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Login - Camfind</title>
+    <script src="https://kit.fontawesome.com/822f67e1ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="/dist/style.css" rel="stylesheet">
+   
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div
+      class="container mx-auto flex justify-center items-center min-h-screen"
+    >
+      <div class="login-form bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+        <h1 class="text-4xl font-extrabold mb-2 text-center text-lime-500">
+          Sign in to Camfind
+        </h1>
+        <p class="text-center text-gray-600 mb-6">
+          Connect with great local businesses
+        </p>
+        <p class="text-xs text-gray-500 mb-6 text-center">
+          By proceeding, you agree to Camfind's
+          <a href="#" class="text-lime-400 hover:underline">Terms of Service</a>
+          and acknowledge Camfind’s
+          <a href="#" class="text-lime-400 hover:underline">Privacy Policy</a>.
+        </p>
+        <div class="flex flex-col gap-3 mb-6">
+          <button
+            type="button"
+            class="flex items-center justify-center w-full border border-gray-300 rounded py-2 bg-white hover:bg-gray-50 transition-colors font-semibold text-gray-700"
+          >
+            <svg
+              class="w-5 h-5 mr-2"
+              viewBox="0 0 48 48"
+            >
+              <g>
+                <path
+                  fill="#4285F4"
+                  d="M44.5 20H24v8.5h11.7C34.7 33.1 30.1 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.1 8.1 2.9l6.1-6.1C34.5 6.2 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11 0 19.7-8 19.7-20 0-1.3-.1-2.3-.2-3z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M6.3 14.7l7 5.1C15.5 16.1 19.4 13 24 13c3.1 0 5.9 1.1 8.1 2.9l6.1-6.1C34.5 6.2 29.6 4 24 4c-7.2 0-13.3 4.1-16.7 10.7z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M24 44c5.6 0 10.5-1.8 14.3-4.9l-6.6-5.4C29.7 35.6 27 36.5 24 36.5c-6.1 0-10.7-2.9-13.7-7.1l-7 5.4C6.7 39.9 14.1 44 24 44z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M44.5 20H24v8.5h11.7c-1.6 4.1-6.1 7.5-11.7 7.5-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.1 8.1 2.9l6.1-6.1C34.5 6.2 29.6 4 24 4c-7.2 0-13.3 4.1-16.7 10.7z"
+                />
+              </g>
+            </svg>
+            Continue with Google
+          </button>
+          <button
+            type="button"
+            class="flex items-center justify-center w-full border border-gray-300 rounded py-2 bg-lime-400 hover:bg-gray-900 transition-colors font-semibold text-white"
+          >
+            <svg
+              class="w-5 h-5 mr-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M16.365 1.43c0 1.14-.93 2.07-2.07 2.07-1.14 0-2.07-.93-2.07-2.07 0-1.14.93-2.07 2.07-2.07 1.14 0 2.07.93 2.07 2.07zm5.13 2.13c-.29-.29-.77-.29-1.06 0l-2.12 2.12c-.29.29-.29.77 0 1.06.29.29.77.29 1.06 0l2.12-2.12c.29-.29.29-.77 0-1.06zM12 5.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5 6.5-2.91 6.5-6.5-2.91-6.5-6.5-6.5zm0 11c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5zm9.07-7.07c-.29-.29-.77-.29-1.06 0l-2.12 2.12c-.29.29-.29.77 0 1.06.29.29.77.29 1.06 0l2.12-2.12c.29-.29.29-.77 0-1.06zM12 22.5c-1.14 0-2.07.93-2.07 2.07 0 1.14.93 2.07 2.07 2.07 1.14 0 2.07-.93 2.07-2.07 0-1.14-.93-2.07-2.07-2.07zm-7.07-2.13c.29.29.77.29 1.06 0l2.12-2.12c.29-.29.29-.77 0-1.06-.29-.29-.77-.29-1.06 0l-2.12 2.12c-.29.29-.29.77 0 1.06zM1.43 7.07c.29.29.77.29 1.06 0l2.12-2.12c.29-.29.29-.77 0-1.06-.29-.29-.77-.29-1.06 0l-2.12 2.12c-.29.29-.29.77 0 1.06z"
+              />
+            </svg>
+            Continue with Apple
+          </button>
+        </div>
+        <form action="/src/index.html" method="POST" class="space-y-5">
+          <div class="input-group flex flex-col">
+            <label for="email" class="mb-2 text-gray-700 font-medium"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              class="px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-lime-400"
+            />
+          </div>
+          <div class="input-group flex flex-col">
+            <label for="password" class="mb-2 text-gray-700 font-medium"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+              class="px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-lime-400"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-lime-400 text-white py-2 rounded hover:bg-blue-700 transition-colors font-semibold"
+          >
+            Login
+          </button>
+        </form>
+        <p class="mt-6 text-center text-gray-600">
+          Don't have an account?
+          <a href="/src/sign-up.html" class="text-lime-400 hover:underline">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
