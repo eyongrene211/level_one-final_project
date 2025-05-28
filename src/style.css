@@ -39,6 +39,7 @@ header{
 }
 
 .active{
+    width: 100%;
     display: flex;
 }
 @media only screen and (max-width: 768px){
@@ -95,6 +96,28 @@ gap: 30px;
     /* background-position: center; */
 }
 
+/*menu bar transitions*/
+
+        /* Mobile menu specific styles */
+        #mobile-nav-menu {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            -webkit-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            -moz-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            -ms-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+        #mobile-nav-menu.translate-x-full {
+            transform: translateX(100%);
+        }
+        #mobile-nav-menu.translate-x-0 {
+            transform: translateX(0);
+        }
+        /* Custom gradient for the hero section overlay */
+        /* .bg-gradient-to-b-overlay {
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+        } */
+
+
 @media (max-width:640px){
     /* main{
         background-image: none;
@@ -103,9 +126,16 @@ gap: 30px;
         background-image: none;
     }
 }
+@media (min-width:641px) and (width:767px) {
+    .hero-sec h1{
+        display: block;
+        font-size:30px ;
+    }
+    
+}
 .hero-sec{
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     gap: 50px;
     position: absolute;
     /* z-index: 11; */
@@ -116,17 +146,18 @@ gap: 30px;
     /* background-color: rgba(14, 14, 15, 0.616); */
 }
 .hero-sec h1{
-    font-size: 20px;
+    /* font-size: 20px; */
     color: rgb(255, 255, 255);
 
 }
 @media (max-width:640px){
     .hero-sec h1{
-        display:none;
+        display:block;
         font-size: 35px;
         color: white;
         text-justify: center;
         text-align: center;
+        
     }
 }
 .search-biz{
@@ -134,9 +165,10 @@ gap: 30px;
     width: 50%;
     height: auto;
 }
-@media (max-width:640px){
+@media (min-width:320px){
     .search-biz{
-        display:none;
+        display:block;
+        width: 100%;
     }
 }
 .search-biz input{

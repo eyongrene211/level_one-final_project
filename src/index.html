@@ -17,18 +17,18 @@
           <a href="/src/index.html">  <div class="logo "> <span><i class="fa-solid fa-location-dot"></i></span> <span>CamFind</span></div></a>
 
             <!--menu-bar-->
-            <div class="md:hidden lg:hidden " id="menu"><span><i class="fa-solid fa-bars"></i></span></div>
+            <div class="md:hidden lg:hidden "   id="mobile-menu-button"><span><i class="fa-solid fa-bars"></i></span></div>
             <!--right-nav-sec-->
-            <div class=" right-nav-sec w-full md:w-max   top-0  right-0  md:h-[50px]  md:m-0 flex   md:flex items-center  flex-col md:gap-6   md:right-0  md:top-0  md:flex-row absolute md:relative bg-gray-600 md:bg-transparent      ">
+            <div   id="mobile-nav-menu"  class=" right-nav-sec w-full h-full   md:w-max   top-0  right-0  md:h-[50px]  md:m-0 flex   md:flex items-center  flex-col md:gap-6   md:right-0  md:top-0  md:flex-row  md:relative bg-white md:bg-transparent   fixed    ">
                 
-                <div id="navMenu" class="  md:w-full w-full md:flex-row  md:items-start md:justify-end h-[50vh] md:h-full hidden navigation pb-10 md:flex   flex-col  md:mt-0    ">
-                    <i  id="close" class=" w-full  text-2xl  fa-solid fa-xmark  pt-3 ml-2  "></i>
+                <div    class="  md:w-full w-full md:flex-row  md:items-start md:justify-end h-[50vh] md:h-full  navigation  md:flex   flex-col  md:mt-0    ">
+                    <i    id="close-mobile-menu"  class=" w-full  text-2xl  fa-solid fa-xmark  pt-3 ml-2  "></i>
                     <ul class="  md:w-max w-full items-center  flex  flex-col md:h-max  md:mt-2.5   md:justify-start md:items-end   md:flex-row ">
-                    <li> <a href="#" class="text-justify">CamFind for professionals</a></li>
-                    <li> <a href="/src/about-page.html">About us</a></li>
-                    <li >  <a href="#">Contact</a> </li>
-                      <a href="/src/login.html" class="md:hidden">Log in</a>
-                    <a href="/src/sign-up.html" class="md:hidden">Sign up</a>
+                    <li> <a href="#" class="text-justify hover:text-green-400">CamFind for professionals</a></li>
+                    <li> <a href="/src/about-page.html " class="hover:text-green-400">About us</a></li>
+                    <li >  <a href="#" class="hover:text-green-400">Contact</a> </li>
+                      <a href="/src/login.html" class="md:hidden hover:text-green-400">Log in</a>
+                    <a href="/src/sign-up.html" class="md:hidden hover:text-green-400">Sign up</a>
                     </ul>
                 </div>
                 <div class="login-signup md:flex  md:w-full hidden md:gap-[20px] md:items-start md:self-start h-full md:h-max md:justify-start md:flex-row">
@@ -41,20 +41,28 @@
     </header>
     
      <main>
-        <section class="hero-sec  bg-[url('https://plus.unsplash.com/premium_photo-1666299862637-8890f5820b83?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmluZGluZyUyMGJ1c3NpbmVzc3xlbnwwfHwwfHx8MA%3D%3D')] bg-no-repeat bg-cover  w-full bg-top z-22 bg-">
+        <section class="hero-sec  md:h-[500px]  bg-[url('https://plus.unsplash.com/premium_photo-1666299862637-8890f5820b83?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmluZGluZyUyMGJ1c3NpbmVzc3xlbnwwfHwwfHx8MA%3D%3D')] bg-no-repeat bg-cover  w-full  z-22 bg-">
 
-            <div class="  md:pt-40  opacity-   md:mt-1  flex flex-col gap-6">
-                <h1 class="text-[90px] px-4 md:text-3xl lg:text-4xl  text mt-10 md:mt-2  text-justify">Connect with the best business around you.</h1>
+            <div class="mt-40  md:pt-50  opacity-   md:mt-1  flex flex-col gap-6">
+                <h1 class="text-[30px] px-4 md:text-4xl lg:text-5xl  text mt-10 md:mt-2  text-justify">Connect with the best business around you.</h1>
     
-                <div class=" w-full  bg-opacity-90 search-biz bg-white ">
+
+                <!--search field mobile-->
+            </div>
+            <div class="w-fit md:hidden bg-gray-500 p-x-6 relative">
+
+                <input class="w-full md:hidden py-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-white text-white" type="text" placeholder="Type Businesses here to find" value="Restaurant">
+                <i class="fa-solid fa-magnifying-glass absolute text-white right-2 top-2"></i>
+            </div>
+                <div class=" hidden md:w-[70%]  md:max-w-[600px] xl:max-w-[600px]  bg-opacity-90 search-biz  bg-white ">
     
-                    <input type="text" placeholder="What business would you like to find today?" class="w-full"> <span class="search-btn"><button class="icon-btn"> <i class="fa-solid fa-magnifying-glass"></i></button></span>
+                    <input type="text" placeholder="What business would you like to find today?" class=" hidden md:block md:w-full"> <span class=" hidden  md:block search-btn"><button class="icon-btn"> <i class="fa-solid fa-magnifying-glass"></i></button></span>
                 </div>
                 <div class="subnav-cont relative hidden md:block ">
                    <ul class="filter-list md:max-lg:hidden"> 
                    <li class="  hidden md:inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Restaurant <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
                    
-                    <div   class="  w-[max] subnav-cat-items rounded-r-lg  bg-white mt-[12px] absolute" >
+                    <div   class="  w-[max] subnav-cat-items rounded-r-lg  bg-gray-300   mt-[12px] absolute" >
                         <ul class="  w-[100%] subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]   text-black p-[25px_15px_25px_15px] gap-[14px]   ">
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Takeout</a></li>
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bakeries</a></li>
@@ -72,7 +80,7 @@
                    
                 </li>
                    <li class="inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Home & Garden <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
-                    <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                    <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-gray-300   mt-[12px] absolute" >
                         <ul class="  w-max subnav-item  grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]   text-black p-[25px_15px_25px_15px] gap-[14px]   ">
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Contractor & Handyman</a></li>
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Plumber</a></li>
@@ -90,7 +98,7 @@
                 
                 </li>
                    <li class="inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Auto Services <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
-                    <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                    <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-gray-300   mt-[12px] absolute" >
                         <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Auto Repair</a></li>
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Car Wash</a></li>
@@ -106,7 +114,7 @@
                     </div>
                 </li>
                    <li class=" text-sm inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Health & Beauty <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
-                    <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                    <div   class="  w-[max] subnav-cat-items rounded-r-lg p-[0px_0px] bg-gray-300  mt-[12px] absolute" >
                         <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dentist</a></li>
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dermatologist</a></li>
@@ -123,7 +131,7 @@
                     </div>
                 </li>
                    <li class="inline-block pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">Travel & Activities <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
-                <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-white mt-[12px] absolute" >
+                <div   class="   subnav-cat-items rounded-r-lg p-[0px_0px] bg-gray-300   mt-[12px] absolute" >
                         <ul class="  w-max subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[15px]   ">
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Things to Do</a></li>
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Bookstores</a></li>
@@ -140,7 +148,7 @@
                     </div>
                 </li>
                    <li class="inline-block  pr-[20px] text-white"><a class=" p-[10px_10px]" href="#">More <span class="pl-[8px]"><i class="fa-solid fa-angle-down"></i></span></a>
-                    <div   class="  w-[max] subnav-cat-items rounded-l-lg   bg-white mt-[12px]  absolute right-[20px]" >
+                    <div   class="  w-[max] subnav-cat-items rounded-l-lg   bg-gray-300  mt-[12px]  absolute right-[20px]" >
                         <ul class="  w-[100%] subnav-item grid grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)]    text-black p-[25px_15px_25px_15px] gap-[14px]   ">
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Dry Cleaning</a></li>
                             <li><a  class="flex gap-[10px]" href="#"><span class=""><svg width="24" height="24" class="icon_svg"><path d="M22.5 11a1 1 0 1 1 0 2h-.06l-2.76 7.35a1 1 0 0 1-.94.65H5.25a1 1 0 0 1-.94-.65L1.56 13H1.5a1 1 0 1 1 0-2h.06l2.76-7.35A1 1 0 0 1 5.25 3h13.5a1 1 0 0 1 .93.65L22.44 11h.06ZM6 5l-2.3 6h16.65L18.1 5H6Zm12.1 14 2.2-6H3.69l2.25 6H18.1Zm-8.53-2.31a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm5.06 0a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Z"></path></svg></span> Apartments</a></li>
@@ -163,14 +171,14 @@
         
      </main>
      <!--recent activity section-->
-     <section class="activity-sec  pt-120  flex justify-center items-center">
+     <section class="activity-sec   pt-120 md:pt-120 xl:pt-160  flex justify-center items-center">
         <div class="  activity-cont w-[100%] flex-wrap  flex flex-col items-center my-20 gap-10">
             <div><h1 class="font-bold text-[40px]  text-center">Recent Activity</h1> </div>
         <!--comment-&review section-->
-        <div class="activity-cont w-full md:max-w-[1144px] activity-cont  md:gap-6 grid grid-cols-1 md:max-lg:grid-cols-2  lg:grid-cols-3 ">
+        <div class="activity-cont w-full md:max-w-[1144px] activity-cont  md:gap-6 grid grid-cols-1 items-center  md:max-lg:grid-cols-2  lg:grid-cols-3 ">
             <!--activity card-->
 
-            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px] w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
+            <div class="  activity-card flex flex-col justify-center items-start min-w-[297px]  w-full  md:max-w-[363px] h-[400px]  shadow-xl bg-white/30  transition-all transform  hover:scale-105 rounded-3xl gap p-4">
                 <div class=" flex  gap-2 w-[100%] pb-2">
                     <div class="img-cont  w-[40px] h-[40px]">
                         <img class=" y-css-1lq2n1z rounded-full object-cover w-full h-full" src="/public/assets/images/activity-pic1.jpg"  alt="Photo by Anu B." height="40" width="40" loading="lazy" draggable="true">
@@ -419,44 +427,44 @@
             </div>
           
         </div>
-        <div class="mt-5"> <span><i class="fa-solid fa-angle-down md:text-[25px]"></i></span> <span><a href="#" class="font-bold text-[20px] md:text-[25px]">Show more activity</a></span></div>
+        <div class="mt-5 text-center"> <span><i class="fa-solid fa-angle-down md:text-[25px]"></i></span> <span><a href="#" class="font-bold text-[20px] md:text-[25px] self-center">Show more activity</a></span></div>
     </section>
 
     <!--category section-->
     <section class="category-sec w-full  flex justify-center   items-center md:my-20">
         <div class="cat-cont  w-full lg:max-w-[1184px] flex flex-col items-center  justify-center gap-[20px]">
-            <div><h1 class="font-bold text-[30px]">categories</h1></div>
-            <div class=" w-[100%] text-sm md:max-w-[1144px]  grid   grid-cols-4 place-content-center gap-[5px]  md:grid md:gap-10  md:grid-cols-[minmax(0,_256px)_minmax(0,_256px)_minmax(0,_256px)_minmax(0,_256px)] md:grid-rows-[minmax(0,_183px)_minmax(0,_183px)]   ">
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[5px] md:gap-[10px] hover:shadow shadow-[#00000026]">
+            <div><h1 class="font-bold text-[30px] md:text-4xl">categories</h1></div>
+            <div class=" w-fit md:w-full text-sm md:max-w-[1144px]  grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center gap-[15px]  md:grid md:gap-10  xl:grid-cols-[minmax(0,_256px)_minmax(0,_256px)_minmax(0,_256px)_minmax(0,_256px)] md:grid-rows-[minmax(0,_183px)_minmax(0,_183px)]   ">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[5px] md:gap-[10px] hover:shadow shadow-[#00000026]">
                     <img class="gap" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
                     <span class="font-semibold text-[16px]">Restaurants</span>
                 </div></a>
 
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[10px] hover:shadow shadow-[#00000026]">
                     <img class="" alt="" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/488aeb87ef6e/assets/img/svg_illustrations/40x40_gift_shops_v2.svg">
                     <span class="font-semibold text-[16px]">Shopping</span>
                 </div></a>
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[10px] hover:shadow shadow-[#00000026]">
                    <img class="" alt="" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/1397897c21a5/assets/img/svg_illustrations/40x40_new_v2.svg">
                     <span class="font-semibold text-[16px]">NightLife</span>
                 </div></a>
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[10px] hover:shadow shadow-[#00000026]">
                    <img class="" alt="" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/0372f8e93aa9/assets/img/svg_illustrations/40x40_set_objective_v2.svg">
                     <span class="font-semibold text-[16px]">Active Life</span>
                 </div></a>
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[10px] hover:shadow shadow-[#00000026]">
                    <img class="" alt="" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/5bd5d2648742/assets/img/svg_illustrations/40x40_barbers_v2.svg">
                     <span class="font-semibold text-[16px]">Beauty & Spas</span>
                 </div></a>
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[10px] hover:shadow shadow-[#00000026]">
                     <img class="" alt="" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/5967f38fe621/assets/img/svg_illustrations/40x40_auto_v2.svg">
                     <span class="font-semibold text-[16px]">Automotive</span>
                 </div></a>
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[10px] hover:shadow shadow-[#00000026]">
                    <img class="" alt="" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/7fc312973cf8/assets/img/svg_illustrations/40x40_home_services_v2.svg">
                     <span class="font-semibold text-[16px]">Home Services</span>
                 </div></a>
-               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center p-[55px_10px]  gap-[10px] hover:shadow shadow-[#00000026]">
+               <a href="/src/cat-page.html" class=""> <div class=" flex flex-col border border-[rgba(240,240,240,1)] rounded-[4px] justify-center items-center md:p-[55px_10px] p-[55px_70px]  gap-[10px] hover:shadow shadow-[#00000026]">
                    <img class="" alt="" src="https://s3-media0.fl.yelpcdn.com/assets/public/40x40_more_v2.yji-961fdce2fd036f85fb01.svg">
                     <span class="font-semibold text-[16px]">More</span>
                 </div></a>
