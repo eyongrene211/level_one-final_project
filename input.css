@@ -89,12 +89,12 @@ gap: 30px;
     background-size: cover;
     background-position:0;
 } */
-.hero-background { /* New class for hero section background */
+ /* New class for hero section background */
     /* background-image: url('public/business-pic1.jpg'); */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* background-position: center; */
-}
+
 
 /*menu bar transitions*/
 
