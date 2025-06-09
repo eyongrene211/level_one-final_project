@@ -44,15 +44,15 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
             mobileNavMenu.classList.add('translate-x-full', 'opacity-0');
             document.body.style.overflow = ''; // Restore scrolling
         });
-
-        // Close menu if a navigation link is clicked (optional, but good UX)
-        mobileNavMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileNavMenu.classList.remove('translate-x-0', 'opacity-100');
-                mobileNavMenu.classList.add('translate-x-full', 'opacity-0');
-                document.body.style.overflow = '';
-            });
-        });
+//
+        // // Close menu if a navigation link is clicked (optional, but good UX)
+        // mobileNavMenu.querySelectorAll('a').forEach(link => {
+        //     link.addEventListener('click', () => {
+        //         mobileNavMenu.classList.remove('translate-x-0', 'opacity-100');
+        //         mobileNavMenu.classList.add('translate-x-full', 'opacity-0');
+        //         document.body.style.overflow = '';
+        //     });
+        // });
 
         // Handle resize to ensure menu state is correct on desktop
         window.addEventListener('resize', () => {

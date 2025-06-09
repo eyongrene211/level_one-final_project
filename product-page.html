@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/822f67e1ce.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
-    <link href="/dist/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="input.css">
+    <link href="output.css" rel="stylesheet">
     <title>Product Page</title>
     <style>
         /* Custom styles if necessary, ensure they don't conflict with Tailwind */
@@ -163,8 +163,8 @@
                 </div>
             </div>
 
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+            <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <div class="md:hidden flex items-center">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -178,8 +178,8 @@
                 </button>
             </div>
             <ul  class=" p-4 space-y-4">
-                <li><a class="text-gray-800 hover:text-green-700 font-medium" href="#">CamFind for business professionals</a></li>
                 <li><a class="text-gray-800 hover:text-green-700 font-medium" href="#">About us</a></li>
+                <li><a class="text-gray-800 hover:text-green-700 font-medium" href="#">CamFind for business professionals</a></li>
                 <li><a class="text-gray-800 hover:text-green-700 font-medium" href="#">Terms of Service</a></li>
                 <li><a class="text-gray-800 hover:text-green-700 font-medium" href="#">Privacy Policy</a></li>
                 <li><a class="text-gray-800 hover:text-green-700 font-medium" href="#">Support</a></li>
@@ -723,60 +723,60 @@
         </section>
     </main>
 
-    <footer class="bg-gray-100 py-8 mt-12 text-center text-gray-600">
+    <footer class="border border-gray-700 w-full bg-gray-800 py-8 mt-12 text-center text-gray-600">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h2 class="font-bold text-gray-800 mb-2">CamFind</h2>
+                    <h2 class="font-bold text-white mb-2">CamFind</h2>
                     <ul>
-                        <li><a href="/src/about-page.html" class="hover:text-green-700">About</a></li>
-                        <li><a href="#" class="hover:text-green-700">Careers</a></li>
-                        <li><a href="#" class="hover:text-green-700">Press</a></li>
-                        <li><a href="#" class="hover:text-green-700">Blog</a></li>
-                        <li><a href="#" class="hover:text-green-700">Terms</a></li>
-                        <li><a href="#" class="hover:text-green-700">Privacy</a></li>
-                        <li><a href="#" class="hover:text-green-700">Help</a></li>
-                        <li><a href="#" class="hover:text-green-700">Accessibility</a></li>
+                        <li><a href="/src/about-page.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessibility</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="font-bold text-gray-800 mb-2">Discover</h2>
+                    <h2 class="font-bold text-white mb-2">Discover</h2>
                     <ul>
-                        <li><a href="#" class="hover:text-green-700">Yelp Project Cost Guides</a></li>
-                        <li><a href="#" class="hover:text-green-700">Collections</a></li>
-                        <li><a href="#" class="hover:text-green-700">Talk</a></li>
-                        <li><a href="#" class="hover:text-green-700">Events</a></li>
-                        <li><a href="#" class="hover:text-green-700">The Local Business Blog</a></li>
-                        <li><a href="#" class="hover:text-green-700">Yelp Mobile</a></li>
-                        <li><a href="#" class="hover:text-green-700">Developers</a></li>
-                        <li><a href="#" class="hover:text-green-700">RSS</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Yelp Project Cost Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Collections</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Talk</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">The Local Business Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Yelp Mobile</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Developers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">RSS</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="font-bold text-gray-800 mb-2">CamFind for Business</h2>
+                    <h2 class="font-bold text-white mb-2">CamFind for Business</h2>
                     <ul>
-                        <li><a href="#" class="hover:text-green-700">CamFind for Business</a></li>
-                        <li><a href="#" class="hover:text-green-700">Business Owner Login</a></li>
-                        <li><a href="#" class="hover:text-green-700">Claim your Business Page</a></li>
-                        <li><a href="#" class="hover:text-green-700">Business Support</a></li>
-                        <li><a href="#" class="hover:text-green-700">CamFind for Restaurant Owners</a></li>
-                        <li><a href="#" class="hover:text-green-700">Advertise on CamFind</a></li>
-                        <li><a href="#" class="hover:text-green-700">Business Success Stories</a></li>
-                        <li><a href="#" class="hover:text-green-700">CamFind Data for B2B</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">CamFind for Business</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Business Owner Login</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Claim your Business Page</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Business Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">CamFind for Restaurant Owners</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Advertise on CamFind</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Business Success Stories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">CamFind Data for B2B</a></li>
                     </ul>
                 </div>
                 <div>
                     <div>
-                        <h2 class="font-bold text-gray-800 mb-2">Languages</h2>
-                        <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center justify-center"><span>English</span><span class="pl-1"><i class="fa-solid fa-angle-down"></i></span></a>
+                        <h2 class="font-bold text-white mb-2">Languages</h2>
+                        <a href="#" class="text-green-400 hover:text-green-300 flex items-center justify-center"><span>English</span><span class="pl-1"><i class="fa-solid fa-angle-down"></i></span></a>
                     </div> 
                     <div class="mt-4">
-                        <h2 class="font-bold text-gray-800 mb-2">Cities</h2>
-                        <a href="#" class="text-blue-500 hover:text-blue-700 flex items-center justify-center"><span>Explore a City</span><span class="pl-1"><i class="fa-solid fa-angle-down"></i></span></a>
+                        <h2 class="font-bold text-white mb-2">Cities</h2>
+                        <a href="#" class="text-green-400 hover:text-green-300 flex items-center justify-center"><span>Explore a City</span><span class="pl-1"><i class="fa-solid fa-angle-down"></i></span></a>
                     </div>
                 </div>
             </div>
-            <div class="text-sm">Copyright &copy;2020-2025 CamFind Inc.</div>
+            <div class="text-gray-500  text-center text-sm">Copyright &copy;2020-2025 CamFind Inc.</div>
         </div>
     </footer>
 

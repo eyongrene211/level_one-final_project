@@ -220,7 +220,7 @@ gap: 30px;
 
 /*footer section*/
 footer ul li a{
-    color: rgba(107,109,111,1);
+    /* color: rgba(107,109,111,1); */
     font-weight: 500;
 }
 
